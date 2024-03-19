@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment 03 | COMP1073 Client-Side JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<script src="js/objects.js" defer></script>
+</head>
+
+<body>
+	<h1>Assignment 03</h1>
+	<!-- adding my student id and name dinamycally using a p tag -->
+	<p id="studentId"></p>
+	<!-- adding an image dinamycally using a javascript -->
+	<p id="image"></p>
+	<!-- <p>&nbsp;</p> -->
+	<!-- Form -->
+    <h2>Complete the form</h2>
+	<form action="" method="get">
+		<div>
+			<!-- This form has 8 fields to fill in -->
+			<!-- Name, Phone Number, Size, Dough, Type, Quantity, Sauce, Sides -->
+			<label for="name">Enter your name:</label>
+			<input id="name" type="text" />
+			<br>
+			<label for="phoneNumber">Phone Number:</label>
+			<!-- when entering the phonenumber, you have to follow the pattern -->
+			<input id="phoneNumber" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="705-123-4567" />
+            <br>
+			<label for="size">Select the Size:</label>
+			<select id="size">
+				<option value="">Please choose …</option>
+				<option value="Small">Small</option>
+				<option value="Medium">Medium</option>
+				<option value="Large">Large</option>
+				<option value="Xlarge">X-Large</option>
+			</select>
+            <br>
+			<label for="dough">Select the dough:</label>
+			<select id="dough">
+				<option value="">Please choose …</option>
+				<option value="Regular">Regular</option>
+				<option value="Thin crust">Thin Crust</option>
+				<option value="Thick crust">Thick Crust</option>
+				<option value="Stuffed mozzarella crust">Stuffed Mozzarella Crust</option>
+			</select>
+            <br>
+			<label for="type">Select the type:</label>
+			<select id="type">
+				<option value="">Please choose …</option>
+				<option value="Pepperoni">Pepperoni</option>
+				<option value="Neapolitan">Neapolitan</option>
+				<option value="New york style">New York Style</option>
+				<option value="Sicilian">Sicilian</option>
+				<option value="Hawaiian">Hawaiian</option>
+				<option value="Buffalo">Buffalo</option>
+				<option value="Vegetarian">Vegetarian</option>
+			</select>
+			<br>
+			<label for="quantity">Pick the quantity:</label>
+			<select id="quantity">
+				<option value="">Please choose …</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                 <option value="10">10</option>
+			</select>
+            <br>
+			<label for="sauces">Select the dipping sauce:</label>
+			<select id="sauces">
+				<option value="">Please choose …</option>
+				<option value="Garlic dipping sauce">Garlic dipping sauce</option>
+				<option value="Ranch cup">Ranch cup</option>
+				<option value="Marinara cup">Marinara cup</option>
+			</select>
+			<br>
+			<label for="sides">Select sides:</label>
+			<select id="sides">
+				<option value="">Please choose …</option>
+				<option value="Bread sticks">Bread sticks x 6</option>
+				<option value="Chicken nuggets">Chicken nuggets x 6</option>
+				<option value="BBQ wings">BBQ wings x 10</option>
+			</select>
+
+
+		</div>
+		<input class="b"  id="submit" type="submit" value="Order" />
+	</form>
+	<p id="formResult"></p>
+	
+</body>
+
+</html>
